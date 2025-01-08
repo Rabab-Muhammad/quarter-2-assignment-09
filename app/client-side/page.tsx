@@ -20,7 +20,7 @@ interface IProducts {
 
 const ClientSide = () => {
   const [products, setProducts] = useState<IProducts[]>([]);
-  const [loading, setLoading] = useState<Boolean>(true);
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     const fetchData = async () => {
