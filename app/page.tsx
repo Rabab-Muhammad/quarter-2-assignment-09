@@ -3,20 +3,19 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-  <div className="my-5 sm:h-screen flex items-center justify-center  text-black ">
-    <div className="bg-yellow-300  rounded-lg p-7  sm:max-w-lg ">
-    <h1 className="text-2xl md:text-3xl font-semibold text-center  mb-2 ">
+    <div className="my-5 sm:h-screen flex items-center justify-center  text-black ">
+      <div className="bg-yellow-300  rounded-lg p-7  sm:max-w-lg ">
+        <h1 className="text-2xl md:text-3xl font-semibold text-center  mb-2 ">
           Data Fetching
         </h1>
         <p className="text-sm md:text-base mb-2 ">
           <span className="text-lg md:text-xl font-semibold">
             Data Fetching
           </span>{" "}
-       
           means getting information from a server or database to show it on a
           website or app.
-          </p>
-        
+        </p>
+
         <p className="text-base md:text-xl mb-2">
           The two types of data fetching are:
         </p>
@@ -47,8 +46,8 @@ export default function Home() {
               Server-Side Fetching
             </Button>
           </Link>
+        </div>
+      </div>
     </div>
-  </div>
-  </div>
   );
 }

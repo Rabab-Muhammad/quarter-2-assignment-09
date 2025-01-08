@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { CiStar } from "react-icons/ci";
 import Link from "next/link";
 
-
 interface IProducts {
   id: number;
   title: string;
@@ -63,29 +62,26 @@ const ClientSide = () => {
               </Link>
 
               <div className="flex justify-between items-center mt-7">
-              <div>
-             {product.category}
-             </div>
-             <div className="flex  gap-1">
-              <CiStar size={20}/>
-             <h1>{`${product.rating.rate}`}</h1>
-             </div>
-             </div>
+                <div>{product.category}</div>
+                <div className="flex  gap-1">
+                  <CiStar size={20} />
+                  <h1>{`${product.rating.rate}`}</h1>
+                </div>
+              </div>
 
-             
-             <Link href={`/product-details/${product.id}`}>
-              <h2 className="text-2xl  text-gray-900 font-bold mt-2 hover:underline ">
-                {`${product.title.slice(0, 20)}...`}{" "}
-              </h2>
+              <Link href={`/product-details/${product.id}`}>
+                <h2 className="text-2xl  text-gray-900 font-bold mt-2 hover:underline ">
+                  {`${product.title.slice(0, 20)}...`}{" "}
+                </h2>
 
-              <p className="text-base text-gray-700 mt-1 hover:underline">{`${product.description.slice(
-                0,
-                60
-              )}...`}</p>
-              <p className="text-lg my-1 text-blue-600 ">
-                {" "}
-                {`$${product.price}`}
-              </p>
+                <p className="text-base text-gray-700 mt-1 hover:underline">{`${product.description.slice(
+                  0,
+                  60
+                )}...`}</p>
+                <p className="text-lg my-1 text-blue-600 ">
+                  {" "}
+                  {`$${product.price}`}
+                </p>
               </Link>
 
               <Button className="bg-blue-500 w-full py-2 px-2 rounded-md hover:bg-blue-600 text-base">
